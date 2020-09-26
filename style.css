@@ -278,7 +278,7 @@ align-items: center;
 
 
    .background{
-    background: rgba(0,0,0, 0.5) url('backgroungbody.jpg');
+    background: rgba(0,0,0, 0.5) url('bodybackground.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
