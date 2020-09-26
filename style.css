@@ -453,7 +453,7 @@ border: 3px black;
         height: 350px;
         flex-direction: column;
         justify-content: center;
-        transition: all 0.7s ease-out;
+        transition: all 0.4s ease-out;
     }
 
     .box-main{
