@@ -519,8 +519,7 @@ html{
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /
+  border-radius: 10px; /* Rounded corners */ /
 }
  
 #myBtn {
