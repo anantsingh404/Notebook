@@ -89,7 +89,7 @@ background-image: url(download.webp);
   
 @media screen and (max-width: 800px) {
  .form-control{
-  max-width:150px;
+  max-width:160px;
  }
 }
 
