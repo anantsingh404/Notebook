@@ -87,7 +87,11 @@ background-image: url(download.webp);
     font-size: 17px;
   }
   
-
+@media screen and (max-width: 800px) {
+ .form-control{
+  max-width:150px;
+ }
+}
 
 
 
