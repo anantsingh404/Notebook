@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>my coding world!</title>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  
+  
+  
+  <nav class="navbar sticky-top background  h-nav-resp">
+    <a class="navbar-brand"><img height="70" src="logo.png"></a>
+      
+    <form class="form-inline my-lg-6 v-class-resp">
+
+
+      <div class="nav-item active">
+        <a id="bose" href="My Coding World!.HTML"><i class="fa fa-fw fa-home"></i>HOME<span class="sr-only">(current)</span></a>
+      </div>
+     
+
+      <div class="nav-item">
+        <a id="bose" href="pricing.html"><i class="fa fa-dollar" style="font-size:30px"></i>PRICING</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" id="bose" data-toggle="modal" data-target="#modalContactForm"><i class="fa fa-fw fa-envelope"></i>CONTACT</a>
+      </div>
+    </form>
+      <form class="form-inline right-nav my-lg-6 v-class-resp">
+
+
+        <a class="topnav mr-sm-2"><input class="form-control" type="search" placeholder="Search..."
+            aria-label="Search"></a>
+
+
+        <button class="btn btn-outline-success mr-sm-2" type="submit" data-toggle="modal"><i class="fa fa-search"></i>SEARCH</button>
+
+
+        <button type="button" class="btn btn-outline-danger mr-sm-2" data-toggle="modal"
+          data-target="#modalLRForm"><i class="fa fa-address-card"></i>SIGN-UP</button>
+        <a href="https://form.jotform.com/202695846102456" class="btn btn-outline-danger mr-sm-2"><i class="fa fa-thumbs-up " style="font-size:30px"></i>RATE-US</a>
+      </form>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+  
+  
+
+
+
+
+  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form34" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form34">Your name</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="form29" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form29">Your email</label>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form32" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="form32">Subject</label>
+          </div>
+
+          <div class="md-form">
+            <i class="fas fa-pencil prefix grey-text"></i>
+            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+            <label data-error="wrong" data-success="right" for="form8">Your message</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!--Modal: Login / Register Form-->
+  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user"></i>
+                Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus"></i>
+                Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-info">Log in <i class="fas fa-sign-in"></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                  data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                </div>
+
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                </div>
+
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                </div>
+
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in"></i></button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+
+
+
+
+  <!--Modal: Login / Register Form-->
+  <div id="header">
+    <section class="background firstSection" id="toppage">
+      
+        
+          <div class="container" align="center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="w3-myfont"><span id="typed" style="color: white"></span></h1>
+            <br>
+          
+            <video autoplay muted loop poster="video.jpg" id="videobg" class="img-circle">
+              <source src="VEDIO1.mp4" type="video/mp4">
+            </video>
+            <br>
+          <p class="text-big" id="macs"align="center">The Future Of Education is Here</p>
+          <div class="buttons" id="mackmohan">
+            <button class="btn">Subscribe</button>
+            <button class="btn">Watch Video</button>
+          </div>
+        </div>
+       
+    </section>
+  </div>
+  <br>
+  <br>
+
+  <div class="container" align="center">
+    <p>
+      <a href="https://getbootstrap.com/" class="btn btn-primary" id="animate">Bootstrap</a>
+      <a href="https://github.com/anonymous-avi" class="btn btn-secondary" id="animate">Git-Hub</a>
+      <a href="https://stackoverflow.com/" class="btn btn-danger" id="animate">stack Overflow</a>
+      <a href="https://www.geeksforgeeks.org/" class="btn btn-info" id="animate">geeks-for-geeks</a>
+      <a href="https://www.w3schools.com/" class="btn btn-warning" id="animate">w3-schools</a>
+    </p>
+  </div>
+  <br>
+  <br>
+
+
+
+  <div id="demo" class="carousel slide" id="carouselmobile" data-ride="carousel" align="center">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="container carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="pyt.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Python Tutorial</h5>
+                <p class="card-text"></p>
+               <a href="https://www.youtube.com/watch?v=WGJJIrtnfpk&list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu" class="btn btn-primary"
+                  id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="j.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Java Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/watch?v=qvf2FMtJPZY&list=PL9ooVrP1hQOHb4bxoHauWVwNg4FweDItZ" class="btn btn-primary"
+                  id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="c.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">C Programming Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRhX6r2uhhlubuF5QextdCSM"
+                  class="btn btn-primary" id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="php.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PHP Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o"
+                  class="btn btn-primary" id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="javascript.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Javascript Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV"
+                  class="btn btn-primary" id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="htht.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HTML Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/watch?v=i2SnHnN_2DU&list=PLx_KyK8sU66X5Aqfvobpx-6TyN-taSWpl" class="btn btn-primary"
+                  id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="css.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CSS Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C" class="btn btn-primary"
+                  id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="c+.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">C++ Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/watch?v=AKNGgAXTark&list=PLIY8eNdw5tW_o8gsLqNBu8gmScCAqKm2Q"
+                  class="btn btn-primary" id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="djan.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Django Tutorial</h5>
+                <p class="card-text"></p>
+                <a href="https://www.youtube.com/watch?v=UmljXZIypDc&list=RDQMELBzq8YBGsU&start_radio=1"
+                  class="btn btn-primary" id="animates">Browse Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+
+  <br>
+  <br>
+  <br>
+
+
+  <section class="section">
+    <div class="paras">
+      <p class="sectionTag text-big">The end of your search is here</p>
+      <p class="sectionSubTag text-small">Education is the process of facilitating learning, or the acquisition of
+        knowledge, skills, values, beliefs, and habits.
+        Educational methods include teaching, training, storytelling, discussion and directed research. Education
+        frequently
+        takes place under the guidance of educators, however learners can also educate themselves.[1] Education can take
+        place
+        in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or
+        acts may
+        be considered educational. The methodology of teaching is called pedagogy.education in zambia </p>
+    </div>
+    <div class="thumbnail">
+      <img src="apple.jfif" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+
+  <section class="section section-left" id="about">
+    <div class="paras">
+      <p class="sectionTag text-big">Transforming Education in India</p>
+      <p class="sectionSubTag text-small">Many public schools provide a free education through the government. Parents
+        may send their own children to a private
+        schools, but they must pay for it. In some poorer places, some children cannot go to school, because their
+        countries do
+        not make education available in their countries, or because their families do not have enough money, or because
+        the
+        children have to work for money, or because the society have negative prejudice on education for girls.The city
+        of Alexandria in Egypt, established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece.
+        There, the great Library of Alexandria was built in the 3rd century BCE. European civilizations suffered a collapse of
+        literacy and organization following the fall of Rome in CE 476.</p>
+    </div>
+    <div class="thumbnail">
+      <img src="number.jfif" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+  <section class="section">
+    <div class="paras">
+      <p class="sectionTag text-big">Data Science </p>
+      <p class="sectionSubTag text-small">Data science is a "concept to unify statistics, data analysis, machine
+        learning, domain knowledge and their related methods" in order to "understand and analyze actual phenomena" with
+        data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics,
+        computer science, domain knowledge and information science. Turing award winner Jim Gray imagined data science
+        as a "fourth paradigm" of science (empirical, theoretical, computational and now data-driven) and asserted that
+        "everything about science is changing because of the impact of information technology" </p>
+    </div>
+    <div class="thumbnail">
+      <img src="datascience.jfif" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+  <section class="section section-left" id="about">
+    <div class="paras">
+      <p class="sectionTag text-big">Machine Learning</p>
+      <p class="sectionSubTag text-small">Machine learning is an application of artificial intelligence (AI) that
+        provides systems the ability to automatically learn and improve from experience without being explicitly
+        programmed. Machine learning focuses on the development of computer programs that can access data and use it
+        learn for themselves.</p>
+    </div>
+    <div class="thumbnail">
+      <img src="ML.jpg" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+  <section class="section">
+    <div class="paras">
+      <p class="sectionTag text-big">Deep Learning</p>
+      <p class="sectionSubTag text-small">Deep learning architectures such as deep neural networks, deep belief
+        networks, recurrent neural networks and convolutional neural networks have been applied to fields including
+        computer vision, machine vision, speech recognition, natural language processing, audio recognition, social
+        network filtering, machine translation, bioinformatics, drug design, medical image analysis, material inspection
+        and board game programs, where they have produced results comparable to and in some cases surpassing human
+        expert performance </p>
+    </div>
+    <div class="thumbnail">
+      <img src="deepleraning.jfif" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+  <section class="section section-left" id="about">
+    <div class="paras">
+      <p class="sectionTag text-big">Web Development</p>
+      <p class="sectionSubTag text-small">Web development is the work involved in developing a website for the Internet
+        (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single
+        static page of plain text to complex web-based internet applications (web apps), electronic businesses, and
+        social network services. A more comprehensive list of tasks to which web development commonly refers, may
+        include web engineering, web design, web content development, client liaison, client-side/server-side scripting,
+        web server and network security configuration, and e-commerce development.
+
+        Among web professionals, "web development" usually refers to the main non-design aspects of building websites:
+        writing markup and coding. Web development may use content management systems (CMS) to make content changes
+        easier and available with basic technical skills.</p>
+    </div>
+    <div class="thumbnail">
+      <img src="webarticle.jpg" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="paras">
+      <p class="sectionTag text-big">Lets Grow Together</p>
+      <p class="sectionSubTag text-small">Education began in prehistory, as adults trained the young in the knowledge
+        and skills deemed necessary in their
+        society. In pre-literate societies, this was achieved orally and through imitation. Story-telling passed
+        knowledge,
+        values, and skills from one generation to the next. As cultures began to extend their knowledge beyond skills
+        that could
+        be readily learned through imitation, formal education developed. Schools existed in Egypt at the time of the
+        Middle
+        Kingdom.</p>
+
+      <p class="sectionSubTag text-small">
+        Matteo Ricci and Xu Guangqi in the Chinese edition of Euclid's Elements published in 1607
+        Plato founded the Academy in Athens, the first institution of higher learning in Europe.
+      </p>
+    </div>
+    <div class="thumbnail">
+      <img src="downloalaptop2.jfif" alt="laptop image" class="imgFluid">
+    </div>
+  </section>
+
+
+
+  <br>
+  <br>
+
+
+
+
+
+
+
+  <!-- Flexbox container for aligning the toasts -->
+
+
+  <footer class="container-fluid bg-dark pt-4 pb-4 text-light mb-2" id="adarsh">
+    <center>
+      <a href="https://www.facebook.com/?stype=lo&jlou=AffdWG8Xst7KywPCJ-sPJJ4iyRrDxaNILjTOWtErnZPNfeazMTzf17v78wNom6Fv4e7qyQiO7DeVKEEthjLuWSfbiVc5o3MtNb-FstpKs8GAbA&smuh=968&lh=Ac-GVyvQQZ4JDCvV"
+        class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        class="fa fa-twitter"></a>
+      <a href="https://myaccount.google.com/" class="fa fa-google"></a>
+
+      <a href="https://www.youtube.com/channel/UCOcatfAuksJjND2yz6Kbsdg?view_as=subscriber" class="fa fa-youtube"
+        id="lals"></a>
+      <a href="https://www.instagram.com/_anonymous_avi_/" class="fa fa-instagram"></a>
+      <a href="https://in.pinterest.com/" class="fa fa-pinterest"></a>
+    </center>
+
+
+    <p class="mb-0 text-center">&copy; 2020-2021 My Coding World!.com</p>
+    <p class="mb-0 text-center">
+      <a href="#header">Back to top |</a>
+      <a href="https://www.privacypolicygenerator.info/live.php?token=vZfJBVfPHoLZSq3b16ZCXgnEgmFYzPR2">Privacy |</a>
+      <a href="https://www.termsandconditionsgenerator.com/live.php?token=GnNcBPZBIwEwZ2R1LDu9Bq53jD5OwraS">Terms</a>
+    </p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+  <script>
+    window.onload = function () {
+      console.log("loaded")
+      var typed = new Typed('#typed', {
+        strings: ["Welcome to My Coding World!🤖", "&#10148;Learn Python", "&#10148;Web Development", "&#10148;Data Science", "&#10148;Machine Learning+Artificial Intelligence", "&#10148;And Other Awesome Programming Concepts With Me &#128512;"],
+        backSpeed: 15,
+        smartbackspace: true,
+        backDelay: 1000,
+        startDelay: 1500,
+        typeSpeed: 25,
+
+        loop: true,
+      });
+    };
+    
+  </script>
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
