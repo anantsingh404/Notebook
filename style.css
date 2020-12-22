@@ -547,9 +547,9 @@ html{
 
 .navbar-brand{
 position:fixed;
-top:10px; 
-left:10px;
-bottom:10px;
+top:-35px; 
+left:-40px;
+
 }
 
  
