@@ -11,13 +11,14 @@
     <title>pricing here!</title>
     <style>
     body {
-  background-image: url("pricingimage.jpg");
+  background-color: #EEFBFB ;
 
 }
 <!--this is the pricing part of the website-->
 .pricing .card {
-  border: none;
-  border-radius: 1rem;
+
+  border-color: black;
+  border-radius: 25rem;
   transition: all 0.2s;
   box-shadow: 0 2.9rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -52,27 +53,19 @@
 
 .pricing .btn {
   font-size: 80%;
-  border-radius: 5rem;
+  border-radius: 10rem;
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
   opacity: 0.4;
   transition: all 0.5s;
 }
-#magar{
-text-align: center;
-color: black;
 
-}
-#card{
-  background-color: grey;
-  white-space: 80%;
-}
+
 
 
 /* Hover Effects on Card */
 
-@media (min-width: 992px) {
   .pricing .card:hover {
     margin-top: -.25rem;
     margin-bottom: .25rem;
@@ -81,30 +74,31 @@ color: black;
   .pricing .card:hover .btn {
     opacity: 1;
   }
+
+#anant{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  background: lightgreen;
 }
 </style>
   </head>
   <body>
-
-<div class="card" id="card">
-  <h2 id="magar">Get a Professional Courses Unlimited Pages Premium Technical Support and More</h2>
-    <h3 id="magar"> All Included With Our Premium Plans.</h3>
-  </div>
-    
-  
-  
   <section class="pricing py-5">
 
 
 
   <div class="container">
+    <div class="card" id="anant">
+      <h2 align="center">Choose the plan that's best for you.</h2>
+    </div>
     <div class="row">
       <!-- Free Tier -->
       <div class="col-lg-4">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-            <h6 class="card-price text-center">$2<span class="period">/month</span></h6>
+            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
             <hr>
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
@@ -125,7 +119,7 @@ color: black;
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-            <h6 class="card-price text-center">$20<span class="period">/month</span></h6>
+            <h6 class="card-price text-center">$5<span class="period">/month</span></h6>
             <hr>
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
@@ -146,7 +140,7 @@ color: black;
         <div class="card">
           <div class="card-body">
             <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-            <h6 class="card-price text-center">$35<span class="period">/month</span></h6>
+            <h6 class="card-price text-center">$10<span class="period">/month</span></h6>
             <hr>
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
