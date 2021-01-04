@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+body{
+  font-family: 'Muli', sans-serif;
+  background:#ddd;
+}
+.shell{
+  padding:80px 0;
+}
+.wsk-cp-product{
+  background:#fff;
+  padding:15px;
+  border-radius:6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position:relative;
+  margin:20px auto;
+}
+.wsk-cp-img{
+  position:absolute;
+  top:5px;
+  left:50%;
+  transform:translate(-50%);
+  -webkit-transform:translate(-50%);
+  -ms-transform:translate(-50%);
+  -moz-transform:translate(-50%);
+  -o-transform:translate(-50%);
+  -khtml-transform:translate(-50%);
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-img img{
+  width:100%;
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+}
+.wsk-cp-product:hover .wsk-cp-img{
+  top:-40px;
+}
+.wsk-cp-product:hover .wsk-cp-img img{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.wsk-cp-text{
+  padding-top:150%;
+}
+.wsk-cp-text .category{
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  padding:5px;
+  margin-bottom:45px;
+  position:relative;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-text .category > *{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -khtml-transform: translate(-50%,-50%);
+    
+}
+.wsk-cp-text .category > span{
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background:#212121;
+  color:#fff;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius:27px;
+  transition: all 0.05s ease-in-out;
+  
+}
+.wsk-cp-product:hover .wsk-cp-text .category > span{
+  border-color:#ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+.wsk-cp-product:hover .wsk-cp-text .category{
+  margin-top: 0px;
+}
+.wsk-cp-text .title-product{
+  text-align:center;
+}
+.wsk-cp-text .title-product h3{
+  font-size:20px;
+  font-weight:bold;
+  margin:15px auto;
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  width:100%;
+}
+.wsk-cp-text .description-prod p{
+  margin:0;
+}
+/* Truncate */
+.wsk-cp-text .description-prod {
+  text-align:center;
+  width: 100%;
+  height:62px;
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  margin-bottom:15px;
+}
+.card-footer{
+  padding: 25px 0 5px;
+  border-top: 1px solid #ddd;
+}
+.card-footer:after, .card-footer:before{
+  content:'';
+  display:table;
+}
+.card-footer:after{
+  clear:both;
+}
+
+.card-footer .wcf-left{
+  float:left;
+  
+}
+
+.card-footer .wcf-right{
+  float:right;
+}
+
+.price{
+  font-size:18px;
+  font-weight:bold;
+}
+
+a.buy-btn{
+  display:block;
+  color:#212121;
+  text-align:center;
+  font-size: 18px;
+  width:35px;
+  height:35px;
+  line-height:35px;
+  border-radius:50%;
+  border:1px solid #212121;
+  transition: all 0.2s ease-in-out;
+}
+a.buy-btn:hover , a.buy-btn:active, a.buy-btn:focus{
+  border-color: #FF9800;
+  background: #FF9800;
+  color: #fff;
+  text-decoration:none;
+}
+.wsk-btn{
+  display:inline-block;
+  color:#212121;
+  text-align:center;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  border-color: #FF9800;
+  background: #FF9800;
+  padding:12px 30px;
+  border-radius:27px;
+  margin: 0 5px;
+}
+.wsk-btn:hover, .wsk-btn:focus, .wsk-btn:active{
+  text-decoration:none;
+  color:#fff;
+}  
+.red{
+  color:#F44336;
+  font-size:22px;
+  display:inline-block;
+  margin: 0 5px;
+}
+@media screen and (max-width: 400px) {
+  .wsk-cp-product{
+    margin:40px auto;
+  }
+  .wsk-cp-product .wsk-cp-img{
+  top:-40px;
+}
+.wsk-cp-product .wsk-cp-img img{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+  .wsk-cp-product .wsk-cp-text .category > span{
+  border-color:#ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+.wsk-cp-product .wsk-cp-text .category{
+  margin-top: 0px;
+}
+a.buy-btn{
+  border-color: #FF9800;
+  background: #FF9800;
+  color: #fff;
+}
+}</style>
+    <title>browse books</title>
+  </head>
+  <body>
+   
+
+
+
+<div class="container text-center">
+<h1>Your book Stall is here!</h1>
+  <span><i class="zmdi zmdi-favorite red"></i><strong>Back </strong> to: <i><a href="https://anonymous-avi.github.io/MY_Notebook/My%20Coding%20World!.HTML" class="wsk-btn">Mycodingworld.com</a></i></span>
+</div>
+
+
+<div class="shell">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="cbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>C</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Its versatility, efficiency and good performance makes it an excellent choice for high complexity data manipulation software, like databases or 3D animation</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="c.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="Cplusbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>C++</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language. C++ gives programmers a high level of control over system resources and memory.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="cplus.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="CSharpbook.png" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>C#</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>C# is widely used for developing desktop applications, web applications and web services. It is used in creating applications of Microsoft at a large scale. C# is also used in game development in Unity.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="csharp.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="pythonbook.png" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>PYTHON</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Python is a general-purpose coding language—which means that, unlike HTML, CSS, and JavaScript, it can be used for other types of programming and software development besides web development. </p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="python.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="javabook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>JAVA</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Java can be used to create complete applications that may run on a single computer or be distributed among servers and clients in a network. It can also be used to build a small application module or applet (a simply designed, small application) for use as part of a Web page.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="java.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="javascriptbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="javascript.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="htmlbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>HTML</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="html.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="cssbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>CSS3</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="css.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="phpbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>PHP</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications. PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="php.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="linuxbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>LINUX</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Linux has long been the basis of commercial networking devices, but now it's a mainstay of enterprise infrastructure. Linux is a tried-and-true, open-source operating system released in 1991 for computers, but its use has expanded to underpin systems for cars, phones, web servers and, more recently, networking gear.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="linux.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="algorithmsbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>ALGORITHMS</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Algorithms are always unambiguous and are used as specifications for performing calculations, data processing, automated reasoning, and other tasks.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="algorithms.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="gitbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>GIT</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="git.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="bashbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>BASH</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Bash (also known as the “Bourne Again SHell”) is an implementation of Shell and allows you to efficiently perform many tasks.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="bash.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="dotnetbook.png" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>DotNET</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>. NET (pronounced dot net) is a framework that provides a programming guidelines that can be used to develop a wide range of applications–––from web to mobile to Windows-based applications. </p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="dotnet.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="jquerybook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>JQUERY</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. </p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="jquery.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="mysqlbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>MYSQL</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>MySQL is a relational database management system based on SQL – Structured Query Language. The application is used for a wide range of purposes, including data warehousing, e-commerce, and logging applications.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="mysql.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="angularbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>ANGULAR</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. </p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="angular.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="nodejsbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>NODEJS</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="nodejs.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="powershellbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>POWERSHELL</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>Windows PowerShell is a Microsoft framework for automating tasks using a command-line shell and an associated scripting language. When it was released in 2006, this powerful tool essentially replaced Command Prompt as the default way to automate batch processes and create customized system management tools.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="powershell.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img">
+            <img src="latexbook.jpg" alt="Product" class="img-responsive" />
+          </div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>LATEX</span>
+            </div>
+            <div class="title-product">
+              <h3>ABOUT</h3>
+            </div>
+            <div class="description-prod">
+              <p>LaTeX, computer programming language used for typesetting technical documents.LaTeX is a free software package created in 1985 by the American computer scientist Leslie Lamport as an addition to the TeX typesetting system.</p>
+            </div>
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">Download free</span></div>
+              <div class="wcf-right"><a href="latex.pdf" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    
+  </div>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
