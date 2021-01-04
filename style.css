@@ -85,7 +85,7 @@ background-image: url(download.webp);
   /* When the screen is less than 800px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 800px) {
    .form-control{
-  max-width:300px;
+  max-width:250px;
  }
 
     
