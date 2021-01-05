@@ -31,4 +31,13 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+var searchBox = document.querySelectorAll('.search-box input[type="text"] + span');
+
+searchBox.forEach(elm => {
+  elm.addEventListener('click', () => {
+    elm.previousElementSibling.value = '';
+  });
+});
+
+
 
