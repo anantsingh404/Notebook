@@ -476,12 +476,12 @@ padding-left:120px;}
 
  flex-direction: column;
  margin-top: 40px;
- margin-left: 20px;
+ 
 }
  .right-nav{
    margin-top: 20px;
       flex-direction: row;
-      padding-left: 30px;
+      
       margin-bottom: 80px;
       justify-content: center;
 
@@ -501,15 +501,15 @@ padding-left:120px;}
     }
 }
 
-
+ @media screen and (max-width: 850px)
+    {
     .box-main{
         flex-direction: column-reverse;
         max-width: 60%;
         align-items: left;
         height: 700px;
     }
- @media screen and (max-width: 850px)
-    {
+
 
 
     .burger{
