@@ -492,11 +492,7 @@ padding-left:120px;}
   justify-content: center;
     flex-direction:column;
 }
-.navbar-brand{
-position:fixed;
-top:10px; 
-left:5px;
-}
+
 .box-main{
         flex-direction: column-reverse;
         max-width: 60%;
@@ -557,7 +553,9 @@ justify-content: center;
 
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 .navbar-brand{
