@@ -492,17 +492,12 @@ padding-left:120px;}
   justify-content: center;
     flex-direction:column;
 }
-  .navbar-brand{
+.navbar-brand{
 position:fixed;
 top:10px; 
 left:5px;
 }
-
-}
-
- @media screen and (max-width: 850px)
-    {
-    .box-main{
+.box-main{
         flex-direction: column-reverse;
         max-width: 60%;
         align-items: left;
@@ -548,17 +543,13 @@ left:5px;
   height: 800px;
 
 }
-.secondHalf{margin-bottom: 2px;
+.secondHalf{
+  margin-bottom: 2px;
 align-items: center;
 align-content: center;
 justify-content: center;
 
 }
-
-
-
-
-
 }
 
 
