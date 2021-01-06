@@ -472,7 +472,7 @@ padding-left:120px;}
 @media screen and (max-width: 850px)
 {
  
-  .form-inline{
+ .form-inline{
   padding-left: 0px;
 }
 .left-nav{
@@ -491,6 +491,11 @@ padding-left:120px;}
   .navbar{
   justify-content: center;
     flex-direction:column;
+}
+  .navbar-brand{
+position:fixed;
+top:10px; 
+left:5px;
 }
 
 }
@@ -560,9 +565,7 @@ justify-content: center;
 
 
 
-html{
-    scroll-behavior: smooth;
-}
+
 
 
 
@@ -570,7 +573,6 @@ html{
 position:fixed;
 top:10px; 
 left:5px;
-
 }
 
  
