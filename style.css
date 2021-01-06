@@ -471,16 +471,19 @@ padding-left:120px;}
 
 @media screen and (max-width: 850px)
 {
-.left-nav{
+  .left-nav{
 
-padding-left:10px;
-padding-top:120px;
+
  flex-direction: column;
+ margin-top: 40px;
+ margin-left: 40px;
 }
  .right-nav{
+   margin-top: 20px;
       flex-direction: row;
-     padding-top:1px;
-       padding-left: 1px;
+      padding-left: 60px;
+      margin-bottom: 80px;
+      justify-content: center;
 
  }
 
@@ -496,6 +499,8 @@ padding-top:120px;
         justify-content: left;
         transition: all 0.4s ease-out;
     }
+}
+
 
     .box-main{
         flex-direction: column-reverse;
@@ -503,7 +508,8 @@ padding-top:120px;
         align-items: left;
         height: 700px;
     }
-
+ @media screen and (max-width: 850px)
+    {
 
 
     .burger{
