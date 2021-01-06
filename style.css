@@ -474,6 +474,9 @@ padding-left:120px;}
  
  .form-inline{
   padding-left: 0px;
+    flex-direction: column;
+     text-align: center;
+     align-items: center;
 }
 .left-nav{
   margin-top: 20px;
