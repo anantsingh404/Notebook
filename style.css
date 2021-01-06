@@ -484,9 +484,11 @@ padding-left:120px;}
   justify-content: center;
   margin-top:20px;
   padding-left:2px;
+  flex-direction:row;
 }
   .navbar{
   justify-content: center;
+    flex-direction:column;
 }
 
 }
