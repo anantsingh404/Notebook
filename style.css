@@ -241,16 +241,24 @@ opacity: 0.7;
 .fa-facebook {
 
 color: purple;
+font-size: 25px;
+width: 30px;
 }
 
 .fa-twitter {
 
 color: skyblue;
+width: 30px;
+font-size: 25px;
+
 }
 
 .fa-google {
 
 color: red;
+width: 30px;
+font-size: 25px;
+
 }
 
 
@@ -262,12 +270,12 @@ color: blue;
 .fa-instagram {
 
 color: pink;
+width: 30px;
+font-size: 25px;
+
 }
 
-.fa-pinterest {
 
-color: green;
-}
 
 
 
@@ -406,7 +414,7 @@ border: 3px black;
         text-align: center;
     }
 
-    }
+    
     .paras {
     padding: 0px;
 }
@@ -460,7 +468,7 @@ border: 3px black;
     width: 33px;
     background-color: white;
     height: 4px;
-    margin: 5px 3px;
+    margin: 5px;
 }
 .form-inline {
 padding-left:120px;}
@@ -471,6 +479,36 @@ padding-left:120px;}
 
 @media screen and (max-width: 850px)
 {
+  .fa-home{
+  color: white;
+  width: 20px;
+  font-size: 20px;
+  
+  }
+  .fa-rupee{
+    color: white;
+    width: 20px;
+    font-size: 20px;
+    
+    }
+    .fa-envelope{
+      color: white;
+      width: 20px;
+      font-size: 20px;
+      
+      }
+      .fa-address-card{
+        color: white;
+        width: 15px;
+        font-size: 15px;
+        
+        }
+        .fa-star-o{
+          color: white;
+          width: 15px;
+          font-size: 20px;
+          
+          }
  
  .form-inline{
   padding-left: 0px;
@@ -573,7 +611,7 @@ left:5px;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 30px; /* Place the button at the bottom of the page */
-  right: 70px; /* Place the button 30px from the right */
+  right: 40px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
