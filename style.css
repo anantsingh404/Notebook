@@ -177,13 +177,13 @@ color: #fff;
 
 border: none;
 border-radius: 15px;
-box-shadow: 0 9px #999;
+box-shadow: 5px 5px black;
 }
 
 #animate:hover {background-color: #3e8e41;}
 #animate:active {
 background-color: #3e8e41;
-box-shadow: 0 5px #666;
+box-shadow: 5px 5px black;
 transform: translateY(4px);
 }
 
