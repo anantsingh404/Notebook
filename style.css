@@ -83,7 +83,7 @@
 
 
 body{
-background: url('download.jpg');
+background-image: url("download.webp");
  }
 .carousel-indicators .active{
       background-color: purple
