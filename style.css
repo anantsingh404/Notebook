@@ -177,7 +177,7 @@ color: #fff;
 
 border: none;
 border-radius: 15px;
-box-shadow: 5px 5px black;
+box-shadow: 4px 6px  #283747;
 }
 
 #animate:hover {background-color: #3e8e41;}
@@ -197,7 +197,7 @@ color: #fff;
 
 border: none;
 border-radius: 15px;
-box-shadow: 5px 5px black;
+box-shadow: 3px 5px  #283747;
 }
 
 #animates:hover {background-color: #3e8e41}
