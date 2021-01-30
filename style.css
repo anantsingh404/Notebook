@@ -94,37 +94,47 @@
             transform: scale(1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-hr { 
+ #alpha { 
             position: relative; 
             top: 80px; 
             border-radius:20px; 
-            height: 4px; 
+            height: 2px; 
+            background: black; 
+            margin-bottom: 80px; 
+        } 
+
+#beta { 
+            position: relative; 
+            top: 80px; 
+            border-radius:20px; 
+            height: 3px; 
             background: white; 
             margin-bottom: 80px; 
         } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .flip-card-back {
         margin: 0;
     padding: 0;
