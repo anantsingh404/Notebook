@@ -1020,5 +1020,7 @@ left:5px;
 #myBtn:hover {
   background-color: purple;/* Add a dark-grey background on hover */
   color:black;
+ box-shadow: none;
+ transition: all 0.05s ease-in-out;
 }
 
