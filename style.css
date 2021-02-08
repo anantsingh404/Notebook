@@ -924,7 +924,8 @@ padding-left:120px;}
   .navbar{
   justify-content: center;
     flex-direction:column;
-     transition: all 0.4s ease-out;
+    transition: all 0.5s ease-in-out;
+    height:400px;
 }
 
 .box-main{
