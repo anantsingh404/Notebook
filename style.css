@@ -1028,4 +1028,7 @@ left:5px;
  box-shadow: none;
  transition: all 0.05s ease-in-out;
 }
-
+#bose{
+  font-family:"Comic Sans MS", cursive, sans-serif, roboto;
+  text-decoration-line: none;
+}
